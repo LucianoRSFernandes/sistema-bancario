@@ -1,16 +1,12 @@
-// src/main/java/com/luciano/sistemabancario/investimento/CDB.java
 package com.luciano.sistemabancario.investimento;
 
 import java.time.LocalDate;
-import lombok.NoArgsConstructor; // Não é estritamente necessário aqui
-import lombok.ToString; // Opcional, herdará de Investimento
+import lombok.NoArgsConstructor;
+import lombok.ToString; 
 
-// @NoArgsConstructor(callSuper = true)
-// @ToString(callSuper = true)
 public class CDB extends Investimento {
 
-    // O construtor manual é mantido para chamar super(args) explicitamente
-    public CDB(double valorAplicado, LocalDate dataAplicacao, double taxaRendimentoDiaria) {
+public CDB(double valorAplicado, LocalDate dataAplicacao, double taxaRendimentoDiaria) {
         super(valorAplicado, dataAplicacao, taxaRendimentoDiaria);
     }
 
@@ -24,5 +20,3 @@ public class CDB extends Investimento {
         return "CDB";
     }
 }
-
-
