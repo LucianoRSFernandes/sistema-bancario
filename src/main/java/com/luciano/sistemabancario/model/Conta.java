@@ -1,4 +1,3 @@
-// src/main/java/com/luciano/sistemabancario/model/Conta.java
 package com.luciano.sistemabancario.model;
 
 import java.time.LocalDateTime;
@@ -6,12 +5,12 @@ import java.util.ArrayList;
 import java.util.List;
 import com.luciano.sistemabancario.util.MoedaUtil;
 import lombok.Getter;
-import lombok.Setter; // Adicionado Setter para saldo, se necessário fora dos métodos de operação
-import lombok.ToString; // Opcional, mas útil para debug
+import lombok.Setter; 
+import lombok.ToString;
 
-@Getter // Gera getters para todos os campos
-@Setter // Gera setters para todos os campos (saldo é manipulado internamente, mas pode ser útil)
-@ToString(of = {"numero", "saldo", "cliente"}) // Gera toString() com campos específicos
+@Getter
+@Setter
+@ToString(of = {"numero", "saldo", "cliente"})
 public abstract class Conta {
     private static int SEQUENCIAL = 1000;
 
